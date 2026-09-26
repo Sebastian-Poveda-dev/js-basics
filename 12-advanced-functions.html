@@ -4,6 +4,20 @@
     <title>Advanced Functions</title>
 </head>
 <body>
-    
+
+    <button class="js-button" onclick="">Click me</button>
+    <script>
+        const buttonElem = document.querySelector('.js-button');
+
+        const eventListener = () => {
+            console.log('click');
+        }
+
+        buttonElem.addEventListener('click', eventListener);
+
+        buttonElem.removeEventListener('click', eventListener);
+
+        buttonElem.addEventListener('click', eventListener);
+    </script>
 </body>
 </html>
